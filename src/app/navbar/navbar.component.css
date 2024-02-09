@@ -1,0 +1,15 @@
+nav
+{
+    background-color: #2C3E50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.nav-item a
+{
+    color: white !important;
+}
+.trquaz
+{
+  background-color: #1ABC9C;
+  border: #1ABC9C 1px solid;
+}

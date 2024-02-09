@@ -1,0 +1,46 @@
+<div class="portfolio text-white ">
+  <div class="container pt-5 pb-3">
+      <div class="d-flex align-items-center justify-content-center ">
+          <div class=" py-5">
+              <h1 class="fw-bold pb-1 pt-5 text-center mov">CONATCT SECTION</h1>
+              <div class="d-flex justify-content-center pt-3 pt-0">
+                  <div class="line mt-2"></div>
+                  <i class="fa-solid fa-star px-2 mov"></i>
+                  <div class="line mt-2"></div>
+              </div>
+          </div>
+      </div>
+    
+  </div>
+</div>
+
+<div class="cotact">
+  <div class=" container mx-auto w-50 ">
+
+    <div class="position-relative ">
+      <label for="userName" class="ps-1 pe-0 position-absolute" [class]="showName ? 'bottom-100' : 'bottom-0'">userName :</label>
+    <input type="text" id="userName" placeholder="userName" class="my-2 form-control  " [(ngModel)]="inputNameValue" (keyup)="toggle()">
+    </div>
+
+   <div class="position-relative mt-4">
+    <label for="userAge" class="ps-1 mb-1 position-absolute" [class]="showAge ? 'bottom-100' : 'bottom-0'" >userAge :</label>
+    <input  id="userAge" placeholder="userAge" class="my-2 form-control " [(ngModel)]="inputAgeValue" (keyup)="toggle()">
+   </div>
+
+   <div class="position-relative mt-4">
+    <label for="userEmail" class="ps-1 position-absolute" [class]="showEmail? 'bottom-100' : 'bottom-0'" *ngIf="showEmail">userEmail :</label>
+    <input type="email" id="userEmail" placeholder="userEmail" class="my-2 form-control " [(ngModel)]="inputEmailValue" (keyup)="toggle()">
+   </div>
+
+
+  <div class="position-relative mt-4">
+    <label for="userPassword" class="ps-1 position-absolute" [class]="showPassword ? 'bottom-100' : 'bottom-0'" *ngIf="showPassword">userPassword :</label>
+    <input type="password" id="userPassword" placeholder="userPassword" class="my-2 form-control" [(ngModel)]="inputPasswordValue" (keyup)="toggle()">  
+  </div>
+
+  <button class=" px-3 py-2 rounded  d-block  my-4">send Massage</button>
+  </div>
+
+ 
+</div>
+

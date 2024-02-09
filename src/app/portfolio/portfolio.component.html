@@ -1,0 +1,36 @@
+<div class="portfolio text-white ">
+    <div class="container pt-5 pb-3">
+        <div class="d-flex align-items-center justify-content-center ">
+            <div class=" py-5">
+                <h1 class="fw-bold pb-1 pt-5 text-center mov">PORTFOLIO COMPONENT</h1>
+                <div class="d-flex justify-content-center pt-3 pt-0">
+                    <div class="line mt-2"></div>
+                    <i class="fa-solid fa-star px-2 mov"></i>
+                    <div class="line mt-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-4" *ngFor="let x of images">
+              <div class=" bag position-relative overflow-hidden" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img [src]= x.img alt="" class="img-fluid rounded-2" >
+                <div class="layer position-absolute d-flex align-items-center justify-content-center rounded-2"  (click)="display(x)">
+                    <i class="fa-solid fa-plus fw-bold"></i>
+                </div>
+              </div>
+              <div class="modal bg-info bg-opacity-25 " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content top-50">
+                    <div class="modal-body d-flex align-items-center">
+                      <img [src]=path alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

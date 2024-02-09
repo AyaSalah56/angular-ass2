@@ -1,0 +1,35 @@
+.mov
+{
+    color: #2C3E50;
+}
+.line
+{
+    height: 4px;
+    width: 80px;
+    background:#2C3E50;
+}
+.layer
+{
+    inset: 0;
+    background-color:#1ABC9C ;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.bag:hover .layer 
+{
+    opacity: 1;
+}
+.layer i
+{
+    font-weight: 800;
+    font-size: 80px !important;
+}
+
+.modal-body {
+    padding: 0px;
+}
+.modal-content{
+    top: 160px !important;
+}

@@ -1,0 +1,39 @@
+.mov
+{
+    color: #2C3E50;
+}
+.line
+{
+    height: 4px;
+    width: 80px;
+    background:#2C3E50;
+}
+input.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 15px;
+}
+input
+{
+    margin-block: 4px !important;
+}
+
+input:focus {
+    outline: none !important; 
+    box-shadow: none;
+    border-color: gray;
+}
+label
+{
+    position: absolute;
+    color: #1ABC9C;
+    transition: 0.7s;
+    z-index: -11111111111;
+}
+button
+{
+    background-color: #1ABC9C;
+    border-color: #1ABC9C !important;
+    color: white;
+}
